@@ -171,3 +171,35 @@ GitHub: [Deepika-dev6](https://github.com/Deepika-dev6)
 ## 📄 License
 
 No license has been specified yet. Please add a license file if you intend to distribute the project under an open-source license.
+
+## 📸 Screenshots
+
+### 1. Student Dashboard
+![Student Dashboard](screenshots/StudentDashboard.png)
+
+### 2. Student Profile
+![Student Profile](screenshots/studentprofilepage.png)
+
+### 3. Academic Profile
+![Academic Profile](screenshots/Academicprofilepage.png)
+
+### 4. Company Dashboard
+![Company Dashboard](screenshots/CompanyDashboard.png)
+
+### 5. Company Board
+![Company Board](screenshots/Companyboard.png)
+
+### 6. Jobs Board
+![Jobs Board](screenshots/Jobboard.png)
+
+### 7. Job Role Board
+![Job Role Board](screenshots/jobroleboard.png)
+
+### 8. Personal Information Page
+![Personal Information Page](screenshots/personalInfoPage.png)
+
+### 9. Login Page
+![Login Page](screenshots/loginpage.png)
+
+### 10. Registration Page
+![Registration Page](screenshots/Registerpage.png)
