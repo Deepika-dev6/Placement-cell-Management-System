@@ -1,0 +1,388 @@
+.company-dashboard {
+  min-height: 100vh;
+  display: flex;
+  background: #f5f7fb;
+}
+
+/* Sidebar */
+
+.company-sidebar {
+  width: 290px;
+  min-height: 100vh;
+  background: #102a4c;
+  color: white;
+  padding: 28px 14px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+.company-logo {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 8px 10px 28px;
+  border-bottom: 1px solid rgba(255,255,255,0.15);
+}
+
+.company-logo-icon {
+  width: 54px;
+  height: 54px;
+  background: #2563eb;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.company-logo h2 {
+  margin: 0;
+  color: white;
+  font-size: 20px;
+}
+
+.company-logo span {
+  font-size: 14px;
+  color: #cbd5e1;
+}
+
+/* Menu */
+
+.company-menu {
+  margin-top: 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.company-menu-item {
+  border: none;
+  background: transparent;
+  color: #e2e8f0;
+  text-align: left;
+  padding: 15px 18px;
+  border-radius: 9px;
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.company-menu-item:hover,
+.company-menu-item.active {
+  background: #2563eb;
+  color: white;
+}
+
+.company-logout {
+  margin-top: auto;
+  border: none;
+  background: #244365;
+  color: white;
+  padding: 15px;
+  border-radius: 9px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.company-logout:hover {
+  background: #dc2626;
+}
+
+/* Main */
+
+.company-main {
+  flex: 1;
+  padding: 35px 45px;
+  box-sizing: border-box;
+  min-width: 0;
+}
+
+/* Header */
+
+.company-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.company-header h1 {
+  margin: 0;
+  color: #0f2745;
+  font-size: 36px;
+}
+
+.company-header p {
+  margin-top: 8px;
+  color: #64748b;
+}
+
+.company-profile-shortcut {
+  border: none;
+  background: white;
+  padding: 10px 18px 10px 10px;
+  border-radius: 12px;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+}
+
+.company-avatar {
+  width: 46px;
+  height: 46px;
+  background: #2563eb;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.company-profile-shortcut strong,
+.company-profile-shortcut span {
+  display: block;
+  text-align: left;
+}
+
+.company-profile-shortcut span {
+  color: #64748b;
+  font-size: 14px;
+}
+
+/* Welcome */
+
+.company-welcome {
+  margin-top: 30px;
+  padding: 38px;
+  background: linear-gradient(135deg, #2563eb, #1d4ed8);
+  color: white;
+  border-radius: 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 12px 30px rgba(37,99,235,0.2);
+}
+
+.company-welcome span {
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.company-welcome h2 {
+  color: white;
+  font-size: 32px;
+  margin: 12px 0 8px;
+}
+
+.company-welcome p {
+  margin: 0;
+}
+
+.company-welcome-icon {
+  font-size: 70px;
+}
+
+/* Statistics */
+
+.company-stats {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.company-stat-card {
+  background: white;
+  padding: 25px;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.05);
+}
+
+.company-stat-icon {
+  width: 55px;
+  height: 55px;
+  border-radius: 13px;
+  background: #e8f0ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 26px;
+}
+
+.company-stat-card span,
+.company-stat-card strong {
+  display: block;
+}
+
+.company-stat-card span {
+  color: #64748b;
+}
+
+.company-stat-card strong {
+  font-size: 25px;
+  color: #111827;
+  margin-top: 5px;
+}
+
+/* Sections */
+
+.company-section {
+  margin-top: 38px;
+}
+
+.company-section-heading h2 {
+  margin: 0;
+  color: #0f2745;
+  font-size: 25px;
+}
+
+.company-section-heading p {
+  margin-top: 6px;
+  color: #64748b;
+}
+
+/* Actions */
+
+.company-actions {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.company-action-card {
+  background: white;
+  border: 1px solid #e2e8f0;
+  padding: 25px;
+  border-radius: 15px;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.company-action-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+.company-action-card > span {
+  font-size: 30px;
+  display: block;
+  margin-bottom: 18px;
+}
+
+.company-action-card strong,
+.company-action-card small {
+  display: block;
+}
+
+.company-action-card strong {
+  font-size: 17px;
+  color: #111827;
+}
+
+.company-action-card small {
+  margin-top: 8px;
+  color: #64748b;
+}
+
+/* Recruitment */
+
+.recruitment-box {
+  margin-top: 20px;
+  background: white;
+  border-radius: 15px;
+  padding: 25px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.recruitment-box div {
+  padding: 15px;
+  border-right: 1px solid #e5e7eb;
+}
+
+.recruitment-box div:last-child {
+  border-right: none;
+}
+
+.recruitment-box span,
+.recruitment-box strong {
+  display: block;
+}
+
+.recruitment-box span {
+  color: #64748b;
+}
+
+.recruitment-box strong {
+  margin-top: 8px;
+  font-size: 26px;
+  color: #111827;
+}
+
+/* Responsive */
+
+@media (max-width: 1100px) {
+  .company-stats,
+  .company-actions {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .recruitment-box {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 700px) {
+  .company-dashboard {
+    flex-direction: column;
+  }
+
+  .company-sidebar {
+    width: 100%;
+    min-height: auto;
+  }
+
+  .company-menu {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .company-menu-item {
+    flex: 1;
+    min-width: 130px;
+  }
+
+  .company-main {
+    padding: 20px;
+  }
+
+  .company-header {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .company-stats,
+  .company-actions,
+  .recruitment-box {
+    grid-template-columns: 1fr;
+  }
+
+  .recruitment-box div {
+    border-right: none;
+    border-bottom: 1px solid #e5e7eb;
+  }
+}

@@ -1,0 +1,218 @@
+.company-details-page {
+  min-height: 100vh;
+  background: #f5f7fb;
+  padding: 30px 45px 60px;
+  box-sizing: border-box;
+}
+
+.details-back-button {
+  border: none;
+  background: transparent;
+  color: #2563eb;
+  font-size: 15px;
+  cursor: pointer;
+  margin-bottom: 25px;
+}
+
+.details-header {
+  background: white;
+  padding: 30px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.details-logo {
+  width: 75px;
+  height: 75px;
+  border-radius: 16px;
+  background: #e8f0ff;
+  color: #2563eb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 34px;
+  font-weight: bold;
+}
+
+.details-header h1 {
+  margin: 0;
+  font-size: 32px;
+  color: #102a4c;
+}
+
+.details-header p {
+  color: #64748b;
+  margin-top: 8px;
+}
+
+/* Summary */
+
+.job-summary {
+  margin-top: 20px;
+  background: white;
+  padding: 25px;
+  border-radius: 14px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.job-summary span,
+.job-summary strong {
+  display: block;
+}
+
+.job-summary span {
+  color: #64748b;
+  font-size: 13px;
+}
+
+.job-summary strong {
+  margin-top: 7px;
+  color: #111827;
+  font-size: 16px;
+}
+
+/* Sections */
+
+.details-section {
+  margin-top: 25px;
+  background: white;
+  padding: 28px;
+  border-radius: 14px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.details-section h2 {
+  margin-top: 0;
+  color: #102a4c;
+}
+
+.details-section p {
+  color: #4b5563;
+  line-height: 1.7;
+}
+
+.details-section ul {
+  padding-left: 22px;
+  color: #4b5563;
+  line-height: 1.9;
+}
+
+/* Requirements */
+
+.requirements-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.requirements-grid div {
+  background: #f8fafc;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.requirements-grid span,
+.requirements-grid strong {
+  display: block;
+}
+
+.requirements-grid span {
+  color: #64748b;
+  font-size: 14px;
+}
+
+.requirements-grid strong {
+  margin-top: 8px;
+  color: #111827;
+  line-height: 1.5;
+}
+
+/* Apply */
+
+.apply-section {
+  margin-top: 25px;
+  background: #2563eb;
+  color: white;
+  padding: 28px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.apply-section h2 {
+  color: white;
+  margin: 0 0 7px;
+}
+
+.apply-section p {
+  margin: 0;
+}
+
+.apply-button {
+  border: none;
+  background: white;
+  color: #2563eb;
+  padding: 13px 25px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.apply-button:hover {
+  background: #f1f5f9;
+}
+
+/* Not found */
+
+.company-not-found {
+  padding: 50px;
+  text-align: center;
+}
+
+.company-not-found button {
+  background: #2563eb;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 7px;
+}
+
+/* Responsive */
+
+@media (max-width: 900px) {
+  .job-summary {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .requirements-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 650px) {
+  .company-details-page {
+    padding: 20px;
+  }
+
+  .details-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .job-summary {
+    grid-template-columns: 1fr;
+  }
+
+  .apply-section {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+}
